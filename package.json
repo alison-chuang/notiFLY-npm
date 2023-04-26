@@ -1,0 +1,20 @@
+{
+    "name": "notifly-easy-update",
+    "version": "1.0.0",
+    "description": "notiFLY is a service that provides marketing push notifications for your company. With the powerful segment feature, you can filter out your target audience list using a GUI interface. This npm package enables you to easily achieve member data synchronization, allowing you to succeed in precise marketing.",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "notiFLY",
+        "update_data",
+        "push_data"
+    ],
+    "author": "Alison Chuang",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.3.6"
+    }
+}
