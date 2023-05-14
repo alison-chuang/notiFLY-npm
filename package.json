@@ -1,6 +1,6 @@
 {
     "name": "notifly-data-wizard",
-    "version": "1.0.5",
+    "version": "1.0.7",
     "description": "notiFLY is a service that provides marketing push notifications for your company. With the powerful segment feature, you can filter out your target audience list using a GUI interface. This npm package enables you to easily achieve member data synchronization, allowing you to succeed in precise marketing.",
     "main": "index.js",
     "type": "module",

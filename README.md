@@ -1,6 +1,8 @@
-#notiFLY-data-wizard
-######notiFLY-data-wizard is a npm package designed to simplify the process of updating member data and orders for the [notiFLY](https://gotolive.online).
-######With this package, developers of our client company could easily update member information and orders without writing a lot of code.
+notiFLY-data-wizard is a npm package designed to simplify the process of updating member data and orders for the [notiFLY](https://gotolive.online).
+
+With this package, developers of our client company could easily update member information and orders without writing a lot of code.
+
+---
 
 ### Installation
 
@@ -11,8 +13,6 @@ npm install notifly-data-wizard
 ```
 
 ### Usage
-
-To get started,
 
 ##### 1. API Key :
 
