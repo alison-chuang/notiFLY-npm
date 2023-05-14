@@ -1,82 +1,82 @@
 import axios from "axios";
 
-const pushMember = async (body) => {
+const pushMember = async (body, apiKey) => {
     try {
-        const url = "http://stylishgotolivelb-82361488.ap-northeast-1.elb.amazonaws.com/api/1.0/members/";
+        const url = "https://gotolive.online/api/1.0/members/";
         const config = {
             headers: {
                 "Content-Type": "application/json",
+                "x-api-key": apiKey,
             },
         };
         const response = await axios.post(url, body, config);
-        return { data: response.data._id };
+        return response.data;
     } catch (e) {
-        console.error(e.message);
-        return e.message;
+        console.error(e);
     }
 };
 
-const updateMember = async (body) => {
+const updateMember = async (body, apiKey) => {
     try {
-        const url = "http://stylishgotolivelb-82361488.ap-northeast-1.elb.amazonaws.com/api/1.0/members/";
+        const url = "https://gotolive.online/api/1.0/members/";
         const config = {
             headers: {
                 "Content-Type": "application/json",
+                "x-api-key": apiKey,
             },
         };
         const response = await axios.put(url, body, config);
         return response.data;
     } catch (e) {
-        console.error(e.message);
-        return e.message;
+        console.error(e);
     }
 };
 
-const deleteMember = async (body) => {
+const deleteMember = async (body, apiKey) => {
     try {
-        const url = "http://stylishgotolivelb-82361488.ap-northeast-1.elb.amazonaws.com/api/1.0/members/";
+        const url = "https://gotolive.online/api/1.0/members/";
         const config = {
             headers: {
                 "Content-Type": "application/json",
+                "x-api-key": apiKey,
             },
         };
         const response = await axios.delete(url, body, config);
         return response.data;
     } catch (e) {
-        console.error(e.message);
-        return e.message;
+        console.error(e);
     }
 };
 
-const pushOrder = async (body) => {
+const pushOrder = async (body, apiKey) => {
     try {
-        const url = "http://stylishgotolivelb-82361488.ap-northeast-1.elb.amazonaws.com/api/1.0/members/order";
+        const url = "https://gotolive.online/api/1.0/members/";
         const config = {
             headers: {
                 "Content-Type": "application/json",
+                "x-api-key": apiKey,
             },
         };
-        const response = await axios.post(url, body, config);
-        return { data: "order updated" };
+        await axios.post(url, body, config);
+        return response.data;
     } catch (e) {
-        console.error(e.message);
-        return e.message;
+        console.error(e);
     }
 };
 
-const deleteOrder = async (body) => {
+const deleteOrder = async (body, apiKey) => {
     try {
-        const url = "http://stylishgotolivelb-82361488.ap-northeast-1.elb.amazonaws.com/api/1.0/members/order";
+        const url = "https://gotolive.online/api/1.0/members/";
         const config = {
             headers: {
                 "Content-Type": "application/json",
+                "x-api-key": apiKey,
             },
         };
-        const response = await axios.put(url, body, config);
-        return { data: "order deleted" };
+        await axios.put(url, body, config);
+        return response.data;
     } catch (e) {
-        console.error(e.message);
-        return e.message;
+        console.error(e);
     }
 };
 
