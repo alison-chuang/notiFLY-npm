@@ -12,7 +12,8 @@ const pushMember = async (body, apiKey) => {
         const response = await axios.post(url, body, config);
         return response.data;
     } catch (e) {
-        console.error(e);
+        console.error(e.message, e.response.data);
+        return { message: e.message, responseData: e.response.data };
     }
 };
 
@@ -28,7 +29,8 @@ const updateMember = async (body, apiKey) => {
         const response = await axios.put(url, body, config);
         return response.data;
     } catch (e) {
-        console.error(e);
+        console.error(e.message, e.response.data);
+        return { message: e.message, responseData: e.response.data };
     }
 };
 
@@ -44,7 +46,8 @@ const deleteMember = async (body, apiKey) => {
         const response = await axios.delete(url, body, config);
         return response.data;
     } catch (e) {
-        console.error(e);
+        console.error(e.message, e.response.data);
+        return { message: e.message, responseData: e.response.data };
     }
 };
 
@@ -60,7 +63,8 @@ const pushOrder = async (body, apiKey) => {
         await axios.post(url, body, config);
         return response.data;
     } catch (e) {
-        console.error(e);
+        console.error(e.message, e.response.data);
+        return { message: e.message, responseData: e.response.data };
     }
 };
 
@@ -76,7 +80,8 @@ const deleteOrder = async (body, apiKey) => {
         await axios.put(url, body, config);
         return response.data;
     } catch (e) {
-        console.error(e);
+        console.error(e.message, e.response.data);
+        return { message: e.message, responseData: e.response.data };
     }
 };
 
