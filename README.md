@@ -1,3 +1,5 @@
+[![NPM](https://nodei.co/npm/notifly-data-wizard.png)](https://nodei.co/npm/notifly-data-wizard/)
+
 notiFLY-data-wizard is a npm package designed to simplify the process of updating member data and orders for the [notiFLY](https://gotolive.online).
 
 With this package, developers of our client company could easily update member information and orders without writing a lot of code.
@@ -40,7 +42,6 @@ The input parameter is an object with member data in the following format:
   client_member_id: "String",
   name: "String",
   email: "String",
-  cellphone: "String",
   gender: "m",
   birthday_year: 1970,
   birthday_month: 12,
@@ -58,7 +59,6 @@ const memberbody = {
   client_member_id: "String",
   name: "String",
   email: "String",
-  cellphone: "String",
   gender: "m",
   birthday_year: 1970,
   birthday_month: 12,
