@@ -11,7 +11,6 @@ const memberbody = {
     client_member_id: "String",
     name: "Stirng",
     email: "String",
-    cellphone: "String",
     gender: "m",
     birthday_year: 1970,
     birthday_month: 12,
